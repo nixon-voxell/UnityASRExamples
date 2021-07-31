@@ -1,0 +1,6 @@
+[submodule "Packages/UnityASR"]
+	path = Packages/UnityASR
+	url = https://github.com/voxell-tech/UnityASR.git
+[submodule "Packages/UnityUtil"]
+	path = Packages/UnityUtil
+	url = https://github.com/voxell-tech/UnityUtil.git
