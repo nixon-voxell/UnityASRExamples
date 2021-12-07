@@ -21,16 +21,17 @@ using UnityEngine;
 using System;
 using DeepSpeechClient;
 using Voxell.Inspector;
+using Voxell;
 
 public class DeepSpeechTest : MonoBehaviour
 {
-  public string modelPath;
+  [StreamingAssetFilePath] public string modelPath;
   public AudioClip clip;
 
   [Button]
   void Test()
   {
-    DeepSpeech sttClient = new DeepSpeech(modelPath);
+    DeepSpeech sttClient = new DeepSpeech(FileUtilx.GetStreamingAssetFilePath(modelPath));
     float[] floatData = new float[clip.samples];
     clip.GetData(floatData, 0);
     short[] shortData = AudioFloatToInt16(floatData);

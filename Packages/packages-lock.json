@@ -1,18 +1,8 @@
 {
   "dependencies": {
-    "com.unity.barracuda": {
-      "version": "file:barracuda-release",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.burst": "1.6.0-pre.2",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.imageconversion": "1.0.0"
-      }
-    },
     "com.unity.burst": {
-      "version": "1.6.0-pre.2",
-      "depth": 1,
+      "version": "1.5.6",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1"
@@ -20,20 +10,18 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "1.5.7",
+      "version": "1.11.2",
       "depth": 0,
       "source": "registry",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "2.0.0"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "1.0.0-pre.3",
-      "depth": 0,
+      "version": "1.0.0-pre.5",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.burst": "1.5.3",
+        "com.unity.burst": "1.5.4",
         "com.unity.test-framework": "1.1.22"
       },
       "url": "https://packages.unity.com"
@@ -46,7 +34,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.6",
+      "version": "3.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -55,7 +43,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.8",
+      "version": "2.0.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -64,21 +52,24 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.3",
+      "version": "1.2.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.mathematics": {
-      "version": "1.2.1",
+    "com.unity.jobs": {
+      "version": "0.11.0-preview.6",
       "depth": 1,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.collections": "1.0.0-pre.5",
+        "com.unity.mathematics": "1.2.1"
+      },
       "url": "https://packages.unity.com"
     },
-    "com.unity.nuget.newtonsoft-json": {
-      "version": "2.0.0",
+    "com.unity.mathematics": {
+      "version": "1.2.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -120,7 +111,7 @@
       }
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.29",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -140,7 +131,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.5.5",
+      "version": "1.5.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -176,20 +167,22 @@
       "url": "https://packages.unity.com"
     },
     "voxell.speech": {
-      "version": "file:UnitySpeechEngine",
+      "version": "file:voxell.speech",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "voxell.util": "1.1.1"
+        "voxell.util": "1.0.0"
       }
     },
     "voxell.util": {
-      "version": "file:UnityUtil",
+      "version": "file:voxell.util",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
-        "com.unity.collections": ""
+        "com.unity.collections": "1.0.0-pre.5",
+        "com.unity.jobs": "0.11.0-preview.6",
+        "com.unity.burst": "1.5.5"
       }
     },
     "com.unity.modules.ai": {

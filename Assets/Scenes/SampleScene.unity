@@ -422,7 +422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &695040986
 Transform:
   m_ObjectHideFlags: 0
@@ -446,14 +446,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 695040985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75568679fa0122a49897426109a1e0ea, type: 3}
+  m_Script: {fileID: 11500000, guid: dfef8eb66726e954fbb4c198ee990e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 44100
-  duration: 10
-  modelpath: E:\VoxellDevelopment\UnityExamples\UnitySpeechEngineExamples\Assets\StreamingAssets/deepspeech-0.9.3-models.pbmm
-  audioClip: {fileID: 0}
-  audioSource: {fileID: 695040988}
+  pushToTalkKey: 32
+  autoDetectVoice: 0
+  modelPath: deepspeech-0.9.3-models.pbmm
+  externalScorerPath: deepspeech-0.9.3-models.scorer
+  resultText: 
+  _silenceTimer: 1
+  _minimumSpeakingSampleValue: 0
+  _clip: {fileID: 0}
 --- !u!82 &695040988
 AudioSource:
   m_ObjectHideFlags: 0

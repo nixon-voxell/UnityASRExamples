@@ -1,6 +1,6 @@
-[submodule "Packages/UnityASR"]
-	path = Packages/UnityASR
+[submodule "Packages/voxell.speech"]
+	path = Packages/voxell.speech
 	url = https://github.com/voxell-tech/UnityASR.git
-[submodule "Packages/UnityUtil"]
-	path = Packages/UnityUtil
+[submodule "Packages/voxell.util"]
+	path = Packages/voxell.util
 	url = https://github.com/voxell-tech/UnityUtil.git
